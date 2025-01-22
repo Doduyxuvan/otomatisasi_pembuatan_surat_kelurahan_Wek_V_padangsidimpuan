@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KOP SURAT PDF</title>
+    <style type="text/css">
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */ /* Coba hapus atau sesuaikan properti ini */
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 50px; /* Menambahkan margin ke atas untuk memindahkan h1 lebih tinggi */
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set form width to 100% */
+    max-width: 400px; /* Add a max-width to prevent it from becoming too wide */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4f4caf;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a04545;
+}
+
+
+    </style>
+    <meta charset="UTF-8">
+    
+</head>
+<body>
+    
+    
+    <h1>Masukkan Data</h1>
+    
+    <form method="post" action="generate-pdf1.php">
+        
+        <label for="name">NIK</label>
+        <input type="text" name="nik" id="nik">
+        
+        <label for="quantity">Nama</label>
+        <input type="text" name="name" id="name">
+
+        <label for="quantity">Alamat</label>
+        <input type="text" name="alamat" id="alamat">
+
+        <label for="quantity">Pekerjaan</label>
+        <input type="text" name="pekerjaan" id="pekerjaan">
+
+        <label for="quantity">Status</label>
+        <input type="text" name="status" id="status">
+
+        <label for="quantity">Pada hari</label>
+        <input type="text" name="padah" id="padah">
+
+        <label for="quantity">Oleh</label>
+        <input type="text" name="kelamin" id="kelamin">
+
+        <label for="quantity">Atas Nama</label>
+        <input type="text" name="namas" id="namas">
+
+        <label for="quantity">Hari jadi</label>
+        <input type="text" name="harij" id="harij">
+
+        <label for="quantity">Saksi 1</label>
+        <input type="text" name="saksi1" id="saksi1">
+
+        <label for="quantity">Saksi 2</label>
+        <input type="text" name="saksi2" id="saksi2">
+        
+        <button> Submit </button>
+    </form>
+</body>
+</html>

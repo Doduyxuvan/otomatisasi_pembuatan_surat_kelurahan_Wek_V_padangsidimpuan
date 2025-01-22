@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membuat kop surat</title>
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .text111 {
+         position: absolute;
+         top: 53mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 35mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 35mm;
+         font-size: 18px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-weight: bold;
+         text-decoration: underline;
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text112 {
+         position: absolute;
+         top: 65mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text113 {
+         position: absolute;
+         top: 58mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 80mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 80mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text113::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 10px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text113- {
+         position: absolute;
+         top: 58mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 95mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 95mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+        .text1 {
+         position: absolute;
+         top: 74mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text1::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 78px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text1- {
+         position: absolute;
+         top: 74mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 35mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 35mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text2 {
+         position: absolute;
+         top: 78mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text2::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 70px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text2- {
+         position: absolute;
+         top: 78mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 35mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 35mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text3 {
+         position: absolute;
+         top: 82mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text3::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 63px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text3- {
+         position: absolute;
+         top: 82mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 35mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 35mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text4 {
+         position: absolute;
+         top: 86mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text4::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 26px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text4- {
+         position: absolute;
+         top: 86mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 35mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 35mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text5 {
+         position: absolute;
+         top: 90mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text5::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 72px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text5- {
+         position: absolute;
+         top: 90mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 35mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 35mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text9- {
+         position: absolute;
+         top: 117mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 20mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 20mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text10 {
+         position: absolute;
+         top: 105mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text10::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 15px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text10- {
+         position: absolute;
+         top: 105mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 20mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 20mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text11 {
+         position: absolute;
+         top: 105mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text11::after {
+      content: ":"; /* Tambahkan tanda ":" setelah teks */
+      margin-left: 15px; /* Sesuaikan dengan jarak yang diinginkan */
+      }
+      .text11- {
+         position: absolute;
+         top: 105mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 20mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 20mm;   
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+      }
+      .text12 {
+         position: absolute;
+         top: 105mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 38mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 38mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text13 {
+         position: absolute;
+         top: 109mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text14 {
+         position: absolute;
+         top: 200mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text15 {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text15- {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 115mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 115mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text16  {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 122mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 122mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text16- {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 144mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 144mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text17 {
+         position: absolute;
+         top: 117mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text17- {
+         position: absolute;
+         top: 109mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 134mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 134mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text17-- {
+         position: absolute;
+         top: 105mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text17--- {
+         position: absolute;
+         top: 109mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text20 {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 70mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 70mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text21 {
+         position: absolute;
+         top: 122mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 5.5mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 5.5mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text22 {
+         position: absolute;
+         top: 136mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 30mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 30mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text22- {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 31mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 31mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text23 {
+         position: absolute;
+         top: 136mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 70mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 70mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text23- {
+         position: absolute;
+         top: 113mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 83mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 83mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text24 {
+         position: absolute;
+         top: 136mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 110mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 110mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      .text25 {
+         position: absolute;
+         top: 150mm; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+         left: 110mm; /* Sesuaikan dengan posisi horizontal yang diinginkan */
+         right: 110mm;
+         font-size: 14px; /* Sesuaikan dengan ukuran font yang diinginkan */
+         color: #000000; /* Sesuaikan dengan warna teks yang diinginkan */
+         white-space: nowrap; /* Mencegah line break */
+         font-family: 'Times New Roman', Times, serif, monospace !important;
+         display: flex;
+         align-items: baseline;
+      }
+      
+        footer {
+            text-align: center;
+            font-style: italic;
+        }
+        body{font-family: arial;background-color: #fff;}
+        .kopsurat{width: 750x; margin: 0; auto; background-color: #fff; height: 100px;padding: 20px;}
+        .surat{border-bottom: 7px solid #000; padding: 3px;width: 100%;}
+        .tengah{text-align: center;line-height: 7px;}
+        img {
+              border: 3px solid #fff;
+              border-radius: 10px;
+              margin-right: 0px;
+              margin-bottom: 1px;
+              margin-top: 10px;
+            }
+            .data{text-align: center;line-height: 1px; width: 750px; margin: 0; auto; height: 100px; padding: 20px; padding-top: 60px;}
+            {display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+              .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item {
+    margin-right: 20px; /* Jarak antara elemen-elemen */
+  }
+            .right   { text-align: right;}
+
+  .test {
+    text-align: right;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .item {
+    margin-right: 20px; /* Jarak antara elemen-elemen */
+  }
+
+    </style>
+</head>
+<body>
+    <div class="kopsurat">
+              
+                <table class="surat">
+               
+              <td><img src="example.png" width="100 " height="110"/></td>
+                <td class="tengah">
+              <h2>PEMERINTAH KOTA PADANGSIDIMPUAN KECAMATAN PADANGSIDIMPUAN SELATAN KELURAHAN WEK V</h2>
+              <h4>Jl. Danau Kerinci, No. 03, Telepon/Faximile (0298) 523024</h4>
+              <b>telepon : 01274124897</b>
+                </td>
+              
+            </table>
+          </div>
+<div class="data">
+          <table>
+            <div class="text111">SURAT KETERANGAN KEPEMILIKAN RUMAH</div>
+    <div class="text112"><p>Yang bertanda tangan di bawah ini lurah Wek V Kecamatan Padangsidimpuan Menerangkan Bahwa : </p></div>
+    <p>                             </p>
+    <div class="text113">Nomor</div>
+    <div class="text113-"> {{ nok }}</div> 
+    <div class="text1">NIK</div>
+    <div class="text1-"> {{ nik }}</div> 
+    <div class="text2">Nama</div>
+    <div class="text2-"> {{ name }}</div> 
+    <div class="text3">Alamat</div>
+    <div class="text3-"> {{ alamat }}</div>
+    <div class="text4">Jenis Kelamin</div>
+    <div class="text4-"> {{ jek }}</div>
+    <div class="text5">Status</div>
+    <div class="text5-"> {{ status }}</div>        
+    <div class="text9-"> {{ harij }}</div>
+
+
+
+
+    <div class="text15">Kabupaten/Kota</div>
+    <div class="text22-"> {{ saksi1 }}</div>
+    <div class="text15-"> {{ kelamin }}</div>
+    <div class="text16">yang bernama</div>
+    <div class="text16-"> {{ namas }}</div>
+    <div class="text17--">Dengan ini kami terangkan bahwa ruah yang ditempati adalah milik Sendiri/Kontrak/Waris</div>
+    <div class="text17---">/Numpang/Hak Guna Pakai/Hibah* yang terletak di RT.001/RW.001 Desa/Kelurahan </div>
+    <div class="text17-"> {{ padah }}</div>
+    <div class="text17"></div>
+    
+    <div class="text20">Provinsi</div>
+    <div class="text23-"> {{ saksi2 }}</div>
+    <div class="text21">Demikian Surat Keterangan ini dibuat dengan sebenarnya untuk dapat dipergunakan seperlunya.
+    </div>
+
+    
+    <div class="text24">
+    Kepala lingkungan
+    Kelurahan Wek V
+    </div>
+    <div class="text25">
+    Muhammad immanuel
+    </div>
+    </div>
+    </table>
+</div>
+
+  </body>
+  
+</html>
